@@ -38,4 +38,16 @@ It will generate a 2x SR image of the given image by SRCNN.
 #### generate 2x
 ![image](https://github.com/irasin/SRCNN-Chainer/blob/master/result/butterfly_super_2x.png)
 
+### train
+```
+python train.py --batch_size/-b  
+                --epoch/-e  
+                --gpu/-g  
+                --out/-o  
+                --snapshot_interval  
+                --display_interval  
+                --train_dir  
+                --val_dir  
+```
+please check train.py
 
