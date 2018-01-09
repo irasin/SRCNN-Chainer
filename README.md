@@ -2,7 +2,7 @@
 SRCNN by Chainer
 
 A Chainer implementation of [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html) by Chainer(v3) and python3.  
-Please notice that i have used padding in the model, which is different from the original paper.  
+Please notice that I have used padding in the model, which is different from the original paper.  
 If you have any question, please feel free to contact me.
 
 ## Usage
