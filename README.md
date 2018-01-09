@@ -1,25 +1,25 @@
 # SRCNN-Chainer
 SRCNN by Chainer
 
-Super Resolution by Chainer(v3) and python3.  
-I used a [DenseNet](https://arxiv.org/abs/1608.06993)-based Generator and [SNGAN](https://drive.google.com/file/d/0B8HZ50DPgR3eSVV6YlF3XzQxSjQ/view) by [Chainer](https://github.com/pfnet-research/chainer-gan-lib) to train this model.   
-This repository just provides the generator model, however, i have used GAN to train it actually.  
+SRCNN by Chainer(v3) and python3.  
+A Chainer implementation of [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html)
+Please notice that i have used padding in the model, which is different from the original paper.  
 If you have any question, please feel free to contact me.
 
 ## Usage
 
 ### compare   
 ```
-python compare_image --input_file/-i  filename
+python compare_image_srcnn --input_file/-i  filename
 ```
 
-It will downsize the given image to the low resolution image with a factor=2, then upsize it by bicubic and SR-method respectively to generate super resolution image with a factor=2 and compare the PSNR/SSIM between the SR image and ground truth.
+It will downsize the given image to the low resolution image with a factor=2, then upsize it by bicubic and SRCNN respectively to generate super resolution image with a factor=2 and compare the PSNR/SSIM between the SR image and ground truth.
 
 ### generate  
 ```
-python generate_2x --input_file/-i  filename
+python generate_2x_srcnn --input_file/-i  filename
 ```
-It will generate a 2x SR image of the given image by SR-method. 
+It will generate a 2x SR image of the given image by SRCNN. 
 
 ## Result
 
