@@ -49,5 +49,5 @@ python train.py --batch_size/-b
                 --train_dir  
                 --val_dir  
 ```
-please check train.py
+
 
