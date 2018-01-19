@@ -20,6 +20,18 @@ python generate_2x_srcnn --input_file/-i  filename
 ```
 It will generate a 2x SR image of the given image by SRCNN. 
 
+### train
+```
+python train.py --batch_size/-b  
+                --epoch/-e  
+                --gpu/-g  
+                --out/-o  
+                --snapshot_interval  
+                --display_interval  
+                --train_dir  
+                --val_dir  
+```
+
 ## Result
 
 ### compare
@@ -38,16 +50,5 @@ It will generate a 2x SR image of the given image by SRCNN.
 #### generate 2x
 ![image](https://github.com/irasin/SRCNN-Chainer/blob/master/result/butterfly_super_2x.png)
 
-### train
-```
-python train.py --batch_size/-b  
-                --epoch/-e  
-                --gpu/-g  
-                --out/-o  
-                --snapshot_interval  
-                --display_interval  
-                --train_dir  
-                --val_dir  
-```
 
 
