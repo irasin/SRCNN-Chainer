@@ -112,14 +112,6 @@ class GeneralGen:
         return image_low, image_bic, image_super
 
 
-def generalgen(image_path, gen, gen_data):
-    lr, bic, super = GeneralGen(image_path, gen, gen_data).processing()
-    save_path, _ = image_path.split(".")
-    cv2.imwrite(save_path + "_low.png", lr)
-    cv2.imwrite(save_path + "_bic.png", bic)
-    cv2.imwrite(save_path + "_super.png", super)
-
-
 def generalgen(image_path, gen_data):
     gen = Generator()
     image_low, image_bic, image_super = GeneralGen(image_path, gen, gen_data).processing()
